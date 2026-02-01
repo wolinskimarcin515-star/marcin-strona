@@ -1,53 +1,27 @@
 <!DOCTYPE html>
-<html lang="pl"> 
-  <head>
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="2Y8OznHOlbN-DJ7Th2vLrVpYJJXQfqxlo_ZBSqFEJAY" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strony Internetowe Premium | Marcin</title>
-  </head>
-  
+<html lang="pl">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Strony internetowe dla firm budowlanych | Więcej zleceń z Google</title>  
+<title>Usługi Remontowo-Budowlane Rafał Ciastek | Kłodzko</title>
 
-<meta name="description" content="Tworzę profesjonalne strony internetowe dla firm budowlanych. Zwiększ widoczność w Google i zdobywaj więcej telefonów oraz zleceń." />
-<meta name="keywords" content="strony internetowe dla firm budowlanych, strona www budowlanka, strony www dla budowlańców, strona dla firmy remontowej" />
-<meta name="author" content="Marcin Woliński" />
+<meta name="description" content="Kompleksowe usługi remontowo-budowlane w Kłodzku i okolicach. Wykończenia wnętrz, remonty mieszkań i domów. 10+ lat doświadczenia. Darmowa wycena.">
 
-<meta property="og:title" content="Strony internetowe dla firm budowlanych" />
-<meta property="og:description" content="Profesjonalna strona + widoczność w Google = więcej zleceń dla Twojej firmy budowlanej." /> 
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://wolinskimarcin515-star-marcin-stron.vercel.app/" /> 
+<meta name="keywords" content="usługi budowlane Kłodzko, remonty Kłodzko, wykończenia wnętrz, firma budowlana Kłodzko, Rafał Ciastek">
 
+<meta name="author" content="Rafał Ciastek">
 
-}
-</style>
-</head>
-</style>
-</head>
-  <title>Strony internetowe dla firm budowlanych | Więcej zleceń z Google</title>
-
-<meta name="description" content="Tworzę profesjonalne strony internetowe dla firm budowlanych. Zwiększ widoczność w Google i zdobywaj więcej telefonów oraz zleceń." />
-
-<meta name="keywords" content="strony internetowe dla firm budowlanych, strona www budowlanka, strony www dla budowlańców, strona dla firmy remontowej" />
-
-<meta name="author" content="Marcin Woliński" />
-
-<meta property="og:title" content="Strony internetowe dla firm budowlanych" />
-<meta property="og:description" content="Profesjonalna strona + widoczność w Google = więcej zleceń dla Twojej firmy budowlanej." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://marcin-strona.vercel.app/" />
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #111;
   color: white;
+  line-height: 1.6;
 }
 
-.hero {
+header {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -57,17 +31,17 @@ body {
   overflow: hidden;
 }
 
-.hero::before {
+header::before {
   content: "";
   position: absolute;
   width: 110%;
   height: 110%;
-  background: url("twoje-zdjecie.jpg") center/cover no-repeat;
+  background: url("IMG_1687.jpeg") center/cover no-repeat;
   animation: zoom 20s infinite alternate ease-in-out;
   z-index: -2;
 }
 
-.hero::after {
+header::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -82,6 +56,8 @@ body {
 }
 
 .hero-content {
+  max-width: 800px;
+  padding: 20px;
   animation: fadeUp 1.5s ease forwards;
   opacity: 0;
 }
@@ -104,11 +80,12 @@ h1 {
 
 p {
   font-size: 18px;
-  margin-bottom: 30px;
-  color: #ccc;
+  color: #ddd;
 }
 
 .btn {
+  display: inline-block;
+  margin-top: 30px;
   padding: 15px 35px;
   background: #00c853;
   color: white;
@@ -122,196 +99,84 @@ p {
   background: #00e676;
   transform: scale(1.05);
 }
-</style>
 
-<section class="hero">
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #00e676;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.feature-box {
+  background: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
   <div class="hero-content">
-    <h1>Usługi Remontowo-Budowlane<br>Rafał Ciastek</h1>
-    <p>Solidne wykonanie. Terminowa realizacja. 10+ lat doświadczenia.</p>
+    <h1>Usługi Remontowo-Budowlane Rafał Ciastek</h1>
+    <p>Kompleksowe wykończenia wnętrz, remonty mieszkań i domów w Kłodzku i okolicach. 10+ lat doświadczenia.</p>
     <a href="tel:609267559" class="btn">📞 Zadzwoń teraz</a>
   </div>
-</section>
+</header>
 
-
-  
 <section>
-<section style="
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-  url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');
-  background-size: cover;
-  background-position: center;
-">
-<section class="hero">
-  <h1>Profesjonalna strona internetowa, która przyciąga klientów z Google</h1>
-  
-  <p>
-    Projektuję nowoczesne strony dla firm usługowych, które zwiększają
-    widoczność w wyszukiwarce i generują więcej telefonów oraz zapytań.
-  </p>
-
-  <a href="#kontakt" class="btn">
-    Sprawdź dostępny termin — szybko odpowiadam
-  </a>
-</section>
-
-  <div class="subtitle">
-    Profesjonalna strona + widoczność w Google.
-    Więcej telefonów. Więcej zleceń.
-  </div>
-
-  <a href="tel:691795166" class="button">
-    📞 Zamów bezpłatną wycenę
-  </a>
-
-</section>
-  
-  <h2>Dlaczego warto ze mną pracować?</h2>
-  <div class="pricing">
-
-    <div class="card">
-      <h3>💼 Podejście biznesowe</h3>
-      <p>Tworzę strony, które mają sprzedawać, a nie tylko wyglądać.</p>
+  <h2>Dlaczego warto wybrać nas?</h2>
+  <div class="features">
+    <div class="feature-box">
+      <h3>10+ lat doświadczenia</h3>
+      <p>Wieloletnia praktyka w branży budowlanej.</p>
     </div>
-
-    <div class="card">
-      <h3>⚡ Szybka realizacja</h3>
-      <p>Większość projektów gotowa w 7–10 dni.</p>
+    <div class="feature-box">
+      <h3>Terminowość</h3>
+      <p>Realizujemy projekty zgodnie z ustalonym harmonogramem.</p>
     </div>
-
-    <div class="card">
-      <h3>📈 Gotowe pod Google</h3>
-      <p>Strona zoptymalizowana pod SEO i szybkie ładowanie.</p>
+    <div class="feature-box">
+      <h3>Darmowa wycena</h3>
+      <p>Bezpłatna konsultacja i szczegółowa wycena prac.</p>
     </div>
-
   </div>
 </section>
-  <div class="subtitle">
-    Minimalistyczny design. Szybkość działania. Realny efekt dla Twojej firmy.
-  </div>
-  <a href="tel:691795166" class="button">📞 Zadzwoń teraz</a>
-</section>
-<section>
-  <h2>Pakiet Strona + Wizytówka Google</h2>
 
-  <div class="pricing">
-
-    <div class="card">
-      <h3>🌐 Strona internetowa</h3>
-      <p>Nowoczesny projekt</p>
-      <p>Galeria realizacji</p>
-      <p>Responsywność (telefon/komputer)</p>
-      <p>Optymalizacja pod Google</p>
-    </div>
-
-    <div class="card">
-      <h3>📍 Wizytówka Google</h3>
-      <p>Pełna konfiguracja</p>
-      <p>Optymalizacja pod lokalne wyszukiwania</p>
-      <p>Dodanie usług i zdjęć</p>
-      <p>Instrukcja zdobywania opinii</p>
-    </div>
-
-    <div class="card">
-      <h3>🚀 Efekt</h3>
-      <p>Więcej telefonów</p>
-      <p>Większe zaufanie</p>
-      <p>Widoczność w Mapach Google</p>
-      <p>Przewaga nad konkurencją</p>
-    </div>
-
-<section id="oferta">
-  <h2>Oferta</h2>
-
-  <div class="pakiet">
-    <h3>Strona Wizytówka</h3>
-    <p><del>999 zł</del> <strong>699 zł – cena startowa</strong></p>
-    <ul>
-      <li>Wersja mobilna</li>
-      <li>Formularz kontaktowy</li>
-      <li>Podstawowe SEO</li>
-    </ul>
-  </div>
-
-  <div class="card popular">
-  <div class="badge">Najczęściej wybierany</div>
-    <h3>Strona Firmowa</h3>
-    <p><del>1499 zł</del> <strong>999 zł – promocja</strong></p>
-    <ul>
-      <li>3–5 podstron</li>
-      <li>Galeria realizacji</li>
-      <li>Formularz wyceny</li>
-      <li>Optymalizacja SEO</li>
-    </ul>
-  </div>
-
-  <div class="pakiet">
-    <h3>Pakiet PRO</h3>
-    <p><strong>1699 zł</strong></p>
-    <p>Indywidualny projekt + pełne wsparcie.</p>
-  </div>
-
-  <p><small>Ceny promocyjne dla pierwszych realizacji.</small></p>
-</section>
-
-    <div class="card">
-      <h3>🔄 Aktualizacje</h3>
-      <p>Dodawanie nowych zdjęć realizacji</p>
-      <p>Aktualizacja usług i informacji</p>
-    </div>
-
-    <div class="card">
-      <h3>⭐ Obsługa opinii</h3>
-      <p>Odpowiadanie na opinie klientów</p>
-      <p>Budowanie profesjonalnego wizerunku</p>
-    </div>
-
-    <div class="card">
-      <h3>📢 Posty w Google</h3>
-      <p>Informacje o wolnych terminach</p>
-      <p>Promocje i nowe realizacje</p>
-    </div>
-
-  </div>
-
-  <h3 style="margin-top:60px; font-size:28px; color:#facc15;">
-    300 zł / miesiąc
-  </h3>
-<section class="hero">
-  <h1>Twoja firma zasługuje na profesjonalną stronę internetową</h1>
-  <p>Zwiększ widoczność w Google i zdobywaj więcej zapytań od klientów.</p>
-  <a href="#kontakt" class="btn">Sprawdź dostępny termin</a>
-</section>
-  <p style="opacity:0.7; margin-top:20px;">
-    Twoja wizytówka pracuje cały czas – nawet gdy jesteś na budowie.
-  </p>
-
-  </section>
-  
-  
-</section>
 <section>
   <h2>Kontakt</h2>
-  <p>Zadzwoń lub napisz — odpowiadam szybko.</p>
-  <p><strong>Marcin</strong></p>
-  <p>📞 691 795 166</p>
-</section>
-<section>
-  <h2>Więcej zleceń dzięki widoczności w Google</h2>
-  <p>
-    Tworzę nowoczesne i szybkie strony internetowe dla firm budowlanych.
-    Pomagam zwiększyć widoczność w Google, dzięki czemu Twoja firma
-    otrzymuje więcej telefonów i zapytań ofertowych.
+  <p style="text-align:center;">
+    📞 609 267 559<br>
+    📧 rafalc51@wp.pl<br>
+    📍 Kłodzko i okolice
   </p>
+</section>
 
-  <h2>Strona internetowa dopasowana do branży budowlanej</h2>
-  <p>
-    Projekt uwzględnia prezentację realizacji, opinie klientów,
-    formularz kontaktowy oraz optymalizację SEO pod usługi budowlane.
-  </p>
-</section>
 <footer>
-  © 2026 Marcin – Strony Internetowe Premium
+  © 2026 Usługi Remontowo-Budowlane Rafał Ciastek | Kłodzko
 </footer>
 
 </body>
 </html>
+  

@@ -4,23 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Usługi Remontowo-Budowlane Rafał Ciastek | Kłodzko</title>
+<title>Remonty Kłodzko | Usługi Remontowo-Budowlane Rafał Ciastek</title>
 
-<meta name="description" content="Kompleksowe usługi remontowo-budowlane w Kłodzku i okolicach. Wykończenia wnętrz, remonty mieszkań i domów. 10+ lat doświadczenia. Darmowa wycena.">
+<meta name="description" content="Remonty mieszkań i domów w Kłodzku. Wykończenia wnętrz, łazienki, kuchnie, adaptacje poddaszy. 10+ lat doświadczenia. Darmowa wycena.">
 
-<meta name="keywords" content="usługi budowlane Kłodzko, remonty Kłodzko, wykończenia wnętrz, firma budowlana Kłodzko, Rafał Ciastek">
-
+<meta name="robots" content="index, follow">
 <meta name="author" content="Rafał Ciastek">
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
+  background: #0f0f0f;
+  color: #fff;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
+/* HERO */
 header {
   height: 100vh;
   display: flex;
@@ -37,7 +38,7 @@ header::before {
   width: 110%;
   height: 110%;
   background: url("IMG_1687.jpeg") center/cover no-repeat;
-  animation: zoom 20s infinite alternate ease-in-out;
+  animation: zoom 18s infinite alternate ease-in-out;
   z-index: -2;
 }
 
@@ -46,49 +47,43 @@ header::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   z-index: -1;
 }
 
 @keyframes zoom {
   from { transform: scale(1); }
-  to { transform: scale(1.1); }
+  to { transform: scale(1.15); }
 }
 
-.hero-content {
+.hero {
   max-width: 800px;
   padding: 20px;
-  animation: fadeUp 1.5s ease forwards;
+  animation: fadeUp 1.2s ease forwards;
   opacity: 0;
 }
 
 @keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 46px;
   margin-bottom: 20px;
 }
 
-p {
-  font-size: 18px;
-  color: #ddd;
+.hero p {
+  font-size: 20px;
+  color: #ccc;
 }
 
 .btn {
   display: inline-block;
   margin-top: 30px;
-  padding: 15px 35px;
+  padding: 15px 40px;
   background: #00c853;
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
   border-radius: 50px;
@@ -97,70 +92,94 @@ p {
 
 .btn:hover {
   background: #00e676;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
+/* SEKCJE */
 section {
   padding: 80px 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 32px;
+  margin-bottom: 50px;
+  font-size: 34px;
   color: #00e676;
 }
 
-.features {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  text-align: center;
 }
 
-.feature-box {
+.card {
   background: #1c1c1c;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 footer {
   background: #000;
   text-align: center;
   padding: 30px;
+  color: #888;
   font-size: 14px;
-  color: #aaa;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
-  <div class="hero-content">
-    <h1>Usługi Remontowo-Budowlane Rafał Ciastek</h1>
-    <p>Kompleksowe wykończenia wnętrz, remonty mieszkań i domów w Kłodzku i okolicach. 10+ lat doświadczenia.</p>
+  <div class="hero">
+    <h1>Remonty i Wykończenia Wnętrz – Kłodzko</h1>
+    <p>Usługi Remontowo-Budowlane Rafał Ciastek. Solidność, terminowość i 10+ lat doświadczenia.</p>
     <a href="tel:609267559" class="btn">📞 Zadzwoń teraz</a>
   </div>
 </header>
 
 <section>
-  <h2>Dlaczego warto wybrać nas?</h2>
-  <div class="features">
-    <div class="feature-box">
-      <h3>10+ lat doświadczenia</h3>
-      <p>Wieloletnia praktyka w branży budowlanej.</p>
+  <h2>Nasze Usługi</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Remonty mieszkań</h3>
+      <p>Kompleksowe prace remontowe od A do Z.</p>
     </div>
-    <div class="feature-box">
-      <h3>Terminowość</h3>
-      <p>Realizujemy projekty zgodnie z ustalonym harmonogramem.</p>
+    <div class="card">
+      <h3>Wykończenia wnętrz</h3>
+      <p>Łazienki, kuchnie, poddasza, gładzie, malowanie.</p>
     </div>
-    <div class="feature-box">
+    <div class="card">
       <h3>Darmowa wycena</h3>
-      <p>Bezpłatna konsultacja i szczegółowa wycena prac.</p>
+      <p>Skontaktuj się i otrzymaj bezpłatną konsultację.</p>
     </div>
+  </div>
+</section>
+
+<section>
+  <h2>Realizacje</h2>
+  <div class="grid gallery">
+    <img src="IMG_1687.jpeg" alt="Remont mieszkania Kłodzko">
+    <img src="IMG_1688.jpeg" alt="Wykończenie łazienki Kłodzko">
+    <img src="IMG_1689.jpeg" alt="Remont wnętrza Kłodzko">
   </div>
 </section>
 
@@ -174,10 +193,8 @@ footer {
 </section>
 
 <footer>
-  © 2026 Usługi Remontowo-Budowlane Rafał Ciastek | Kłodzko
+  © 2026 Rafał Ciastek – Usługi Remontowo-Budowlane | Kłodzko
 </footer>
 
 </body>
 </html>
-  
-  
